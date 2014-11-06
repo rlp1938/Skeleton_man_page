@@ -1,0 +1,22 @@
+This is the README for manskel.
+
+manskel is the skeleton source for a file to be converted by txt2tags to
+produce a man page and also the look of a man page to show as (x)html.
+
+Copy the skeleton to a file of your choice, conventionally with the
+extension .t2t. Alter the text inside to suit that required by your
+application then produce the man page thusly:
+
+	txt2tags -t man yourfile.t2t
+
+The result will be yourfile.man which I suggest you rename to
+yourfile.1. You may also gzip it to yourfile.1.gz but unless your
+man page is > 4k bytes that is pointless.
+
+You can produce an xhtml version like this:
+
+	txt2tags -t xhtml yourfile.t2t
+
+This will produce yourfile.xhtml.
+
+Read the fine man page for txt2tags for more information.
